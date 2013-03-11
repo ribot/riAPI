@@ -11,6 +11,7 @@ var app = express();
 // Configure for all environments
 app.configure(function(){
     app.set('port', process.env.PORT || 3000);
+    app.use(express.logger('dev')); // Dont log when testing
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
@@ -22,14 +23,16 @@ app.configure('development', function(){
     app.use(express.errorHandler());
 });
 
+// Get all of the route modules
+var team = require('./routes/team');
+
+// Setup all the routes
+app.get('/api/team', team.list);
+
 // Start the server
 // This also doubles as the export which is used for the test framework
 var server = module.exports.server = http.createServer(app);
-
-// Check which mode we're in
-if (!module.exports.testing) {
-    // Only start listening if we aren't being tested
-    server.listen(3000, function() {
-        console.log("Express server started at http://0.0.0.0:" + app.get('port'));
-    });
-}
+// Start the server
+server.listen(3000, function() {
+    console.log("Express server started at http://0.0.0.0:" + app.get('port'));
+});
