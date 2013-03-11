@@ -1,0 +1,35 @@
+// Let's begin...
+
+// Load in all our dependancies
+var express = require('express'),
+    http = require('http'),
+    path = require('path');
+
+// Get the instance of express
+var app = express();
+
+// Configure for all environments
+app.configure(function(){
+    app.set('port', process.env.PORT || 3000);
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(app.router);
+    app.use(express.static(path.join(__dirname, 'public')));
+});
+
+// Configure if we're in development
+app.configure('development', function(){
+    app.use(express.errorHandler());
+});
+
+// Start the server
+// This also doubles as the export which is used for the test framework
+var server = module.exports.server = http.createServer(app);
+
+// Check which mode we're in
+if (!module.exports.testing) {
+    // Only start listening if we aren't being tested
+    server.listen(3000, function() {
+        console.log("Express server started at http://0.0.0.0:" + app.get('port'));
+    });
+}

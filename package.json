@@ -1,0 +1,17 @@
+{
+  "name": "theribots",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "test": "mocha -R nyan test/*"
+  },
+  "dependencies": {
+    "express": "3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.6.0",
+    "chai": "~1.4.0",
+    "supertest": "~0.4.0"
+  }
+}
