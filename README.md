@@ -61,12 +61,8 @@ Get a team members ribotar
 
 **Request**
 
-A ribotar is an avatar for a team member. They are usually PNG images which come in 3 sizes. Small (s), medium (m) and large (l).
-
-You can access the ribotars by sending a GET request to:
+A ribotar is an avatar for a team member. They are usually PNG images. You can access the ribotars by sending a GET request to:
 
     /team/<id>/ribotar
 
-Making this call will default to the large size. To get a different size you can pass the size into the url such as:
-
-    /team/<id>/ribotar?size=s
+*Note:* Not every team member has a ribotar
