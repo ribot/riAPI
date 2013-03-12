@@ -10,7 +10,7 @@ var app = express();
 
 // Configure for all environments
 app.configure(function(){
-    app.set('port', process.env.PORT || 3000);
+    app.set('port', process.env.PORT || 25708);
     app.use(express.logger('dev')); // Dont log when testing
     app.use(express.bodyParser());
     app.use(express.methodOverride());
