@@ -23,7 +23,7 @@ To get a list of all ribot team members, send a GET request to:
 
 **Response**
 
-The response will be a list of events ordered by _id_. The response will be in JSON with these attributes:
+The response will be in JSON with these attributes:
 
 - *id* - Unique team member id (required)
 - *firstName* - (required)
