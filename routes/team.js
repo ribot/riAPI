@@ -70,7 +70,7 @@ var ribotar = function(req, res) {
     // Check the file exists
     fs.exists(path, function(exists) {
         if (!exists) {
-            return res.json(404, {error: "No team member with this id exists"});
+            return res.json(404, {error: "No ribotar with this id exists"});
         }
 
         // Send the file
