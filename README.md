@@ -66,3 +66,22 @@ A ribotar is an avatar for a team member. They are usually PNG images. You can a
     /team/<id>/ribotar
 
 *Note:* Not every team member has a ribotar
+
+Get the studio information
+==========================
+
+**Request**
+
+Get by sending a request to:
+
+    /studio
+
+**Response**
+
+- *addressNumber* - The number on the street (required)
+- *street* - The street name (required)
+- *city* - (required)
+- *county* - (required)
+- *postcode* - (required)
+- *country* - (required)
+- *photos* - An array of URLs to photos of the studio (optional)

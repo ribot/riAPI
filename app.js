@@ -25,11 +25,13 @@ app.configure('development', function(){
 
 // Get all of the route modules
 var team = require('./routes/team');
+var studio = require('./routes/studio');
 
 // Setup all the routes
 app.get('/api/team', team.list);
 app.get('/api/team/:id', team.single);
 app.get('/api/team/:id/ribotar', team.ribotar);
+app.get('/api/studio', studio.single);
 
 // Start the server
 // This also doubles as the export which is used for the test framework
