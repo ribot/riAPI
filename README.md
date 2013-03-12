@@ -8,7 +8,7 @@ Using the API
 
 All requests will be based off the root URL, which is:
 
-    http://www.matto1990.com:3000/api/
+    http://theribots.nodejitsu.com/api/
 
 All responses are in JSON format. If any attribute is optional it will either be a blank attribute in the JSON, or simply not appear in the JSON. You application should be able to deal with optional attributes not appearing in the response.
 

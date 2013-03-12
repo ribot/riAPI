@@ -38,6 +38,6 @@ app.get('/api/studio', studio.single);
 // This also doubles as the export which is used for the test framework
 var server = module.exports.server = http.createServer(app);
 // Start the server
-server.listen(3000, function() {
+server.listen(app.get('port'), function() {
     console.log("Express server started at http://0.0.0.0:" + app.get('port'));
 });

@@ -33,6 +33,10 @@ var list = function(req, res) {
             teamMembers.push(jsonData);
         });
 
+        _.sortBy(teamMembers, function(person) {
+            return person.id;
+        });
+
         // Return the data
         res.json(teamMembers);
     });
