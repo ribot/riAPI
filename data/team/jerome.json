@@ -2,9 +2,11 @@
     "firstName": "Jerome",
     "lastName": "Ribot",
     "location": "Brighton, UK",
-    "role": "Founder, Chief Design Officer",
+    "role": "Chief Design Officer",
     "hexColor": "#4695b6",
-    "description": "Jerome somehow manages to think inside, outside and around the box, seeking solutions to ancient problems using the latest technologies and techniques. Always on the go, never satisfied with \"good enough\", Jerome drives ribot’s creative, design, development and direction.",
+    "description": "Does puns and runs.",
     "twitter": "ribotminimus",
-    "email": "jerome@ribot.co.uk"
+    "email": "jerome@ribot.co.uk",
+    "favSweet": "Mango",
+    "favSeason": "Autumn"
 }
