@@ -1,9 +1,9 @@
 {
   "name": "theribots",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "private": true,
   "scripts": {
-    "start": "node app",
+    "start": "node app.js",
     "test": "mocha -R nyan test/*"
   },
   "dependencies": {
@@ -14,5 +14,9 @@
     "mocha": "~1.6.0",
     "chai": "~1.4.0",
     "supertest": "~0.4.0"
+  },
+  "subdomain": "theribots",
+  "engines": {
+    "node": "0.8.x"
   }
 }
