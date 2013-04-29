@@ -1,9 +1,13 @@
 {
     "firstName": "Roxanne",
     "lastName": "Borowska",
-    "nickname": "Roxy",
+    "nickname": "Rokushi",
+    "role": "Mini Glue",
     "location": "Brighton, UK",
     "hexColor": "#f19092",
     "twitter": "roxybird",
-    "email": "roxy@ribot.co.uk"
+    "email": "roxy@ribot.co.uk",
+    "description": "Roxy 'The Communicator' Borowska looks after both our brand and new business. Though British-born, she's secretly Japanese (having worked there for many years) and brings not only her charm, cheer and crystal clear communication to the team (and beyond), but also a discerning taste for cookies and our indispensable Japanese Word of the Week!",
+    "favSweet": "Mochi",
+    "favSeason": "Autumn"
 }
