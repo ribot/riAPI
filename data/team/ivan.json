@@ -1,8 +1,10 @@
 {
     "firstName": "Ivan",
     "lastName": "Carballo",
+    "nickname": "Spanish Gosling",
     "role": "Android developer",
     "twitter": "ivacf",
     "email": "ivan@ribot.co.uk",
-    "favSeason": "Summer"
+    "favSeason": "Summer",
+    "description": "I sometimes masquerade as a developer, but really, I'm just planning for my next Summer blockbuster."
 }
