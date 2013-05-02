@@ -28,6 +28,13 @@ app.configure('development', function(){
 var team = require('./routes/team');
 var studio = require('./routes/studio');
 
+// Allow cross domain access to the public API
+app.all('/api/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 // Setup all the routes
 app.get('/api/team', team.list);
 app.get('/api/team/:id', team.single);
