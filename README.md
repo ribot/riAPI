@@ -8,7 +8,7 @@ Using the API
 
 All requests will be based off the root URL, which is:
 
-    http://theribots.nodejitsu.com/api/
+    http://devchallenge.ribot.io/api/
 
 All responses are in JSON format. If any attribute is optional it will either be a blank attribute in the JSON, or simply not appear in the JSON. You application should be able to deal with optional attributes not appearing in the response.
 
